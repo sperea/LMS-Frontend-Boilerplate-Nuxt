@@ -3,7 +3,6 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -186,7 +185,7 @@ Project Link: [https://github.com/sperea/jla-elearning-backend](https://github.c
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [issues-shield]: https://img.shields.io/bitbucket/issues/sperea/jla-elearning-backend?style=for-the-badge
 [issues-url]: https://github.com/sperea/jla-elearning-backend/issues
-[license-shield]: [license-shield]: https://img.shields.io/badge/license-Educational%20Community%20License%20v2.0-green?style=for-the-badge
+[license-shield]: https://img.shields.io/badge/license-Educational%20Community%20License%20v2.0-green?style=for-the-badge
 [license-url]: https://github.com/sperea/jla-elearning-backend/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/sergperea/
