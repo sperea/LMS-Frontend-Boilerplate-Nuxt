@@ -53,8 +53,9 @@
 ## About The Project
 
 LMS-Frontend-Boilerplate-Nuxt is part of an LMS - Universal Application with Nuxt.js and Django. 
- 
 
+My intention is to create an open source LMS that is easy to install and deploy, which is free for public educational institutions. Django will handle the backend operations and provide the APIs using the DRF (Django Rest Framework), while Nuxt.js will create the frontend.
+ 
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
 ### Built With
