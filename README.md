@@ -1,4 +1,4 @@
-# jla-elearning-frontend
+# LMS Frontend Boilerplate in Nuxt.js
 
 ## Build Setup
 
