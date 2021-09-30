@@ -13,6 +13,9 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 /* Plugins */
 
 import nuxt_plugin_plugin_c3642380 from 'nuxt_plugin_plugin_c3642380' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_pluginutils_4a53e8b6 from 'nuxt_plugin_pluginutils_4a53e8b6' // Source: ./nuxt-i18n/plugin.utils.js (mode: 'all')
+import nuxt_plugin_pluginrouting_338243b0 from 'nuxt_plugin_pluginrouting_338243b0' // Source: ./nuxt-i18n/plugin.routing.js (mode: 'all')
+import nuxt_plugin_pluginmain_0de4c5bf from 'nuxt_plugin_pluginmain_0de4c5bf' // Source: ./nuxt-i18n/plugin.main.js (mode: 'all')
 import nuxt_plugin_axios_bb990d54 from 'nuxt_plugin_axios_bb990d54' // Source: ./axios.js (mode: 'all')
 
 // Component: <ClientOnly>
@@ -63,7 +66,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"jla-elearning-frontend","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"Elearning | ","htmlAttrs":{"lang":"es"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico","sizes":"144x144 64x64 32x32 24x24 16x16"}],"style":[],"script":[]},
 
     router,
     nuxt: {
@@ -179,6 +182,18 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_plugin_c3642380 === 'function') {
     await nuxt_plugin_plugin_c3642380(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_pluginutils_4a53e8b6 === 'function') {
+    await nuxt_plugin_pluginutils_4a53e8b6(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_pluginrouting_338243b0 === 'function') {
+    await nuxt_plugin_pluginrouting_338243b0(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_pluginmain_0de4c5bf === 'function') {
+    await nuxt_plugin_pluginmain_0de4c5bf(app.context, inject)
   }
 
   if (typeof nuxt_plugin_axios_bb990d54 === 'function') {
