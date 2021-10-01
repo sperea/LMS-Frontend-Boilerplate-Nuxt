@@ -2,7 +2,7 @@ import config from './elearning.frontend.config.js'
 
 export default {
 
-  mode: 'spa',
+  ssr: false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
