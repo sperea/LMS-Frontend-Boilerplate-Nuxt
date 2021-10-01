@@ -78,4 +78,16 @@ export default {
   },
 
 
+  loadingIndicator: {
+    name: config.loadingIndicator.name || 'chasing-dots',
+    color: '#fd2d78',
+    background: '#212324'
+  },
+
+  loading: {
+    color: '#fd2d78',
+    height: '1px',
+    throttle: 0
+  },
+
 }
