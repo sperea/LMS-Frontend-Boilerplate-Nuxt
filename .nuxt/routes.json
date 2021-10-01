@@ -1,5 +1,19 @@
 [
   {
+    "name": "login",
+    "path": "/login",
+    "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_6801e45f"
+  },
+  {
+    "name": "register",
+    "path": "/register",
+    "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/register.vue",
+    "chunkName": "pages/register",
+    "_name": "_327fe41d"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/index.vue",

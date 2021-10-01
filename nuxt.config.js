@@ -1,6 +1,9 @@
 import config from './elearning.frontend.config.js'
 
 export default {
+
+  mode: 'spa',
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: `Elearning | ${config.name}`,
@@ -39,11 +42,14 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/auth',
     'nuxt-i18n',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: process.env.BACKEND_URL || 'http://localhost:8000'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -66,6 +72,32 @@ export default {
         removeEmptyElements: true
       }
     }
+  },
+
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          login: {
+            url: 'token/login/',
+            method: 'post',
+            propertyName: 'auth_token',
+          },
+          logout: { url: 'token/logout/', method: 'post' },
+          user: {
+            url: 'accounts/data/',
+            method: 'get',
+            propertyName: false,
+          },
+        },
+        tokenType: 'Token',
+        tokenName: 'Authorization',
+      },
+      redirect: {
+        login: '/login',
+        home: '/',
+      },
+    },
   },
 
   generate: {
