@@ -1,20 +1,41 @@
 [
   {
-    "name": "login",
+    "name": "index___en",
+    "path": "/en",
+    "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_c34b7d70"
+  },
+  {
+    "name": "login___es",
     "path": "/login",
     "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/login.vue",
     "chunkName": "pages/login",
     "_name": "_6801e45f"
   },
   {
-    "name": "register",
+    "name": "register___es",
     "path": "/register",
     "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/register.vue",
     "chunkName": "pages/register",
     "_name": "_327fe41d"
   },
   {
-    "name": "index",
+    "name": "login___en",
+    "path": "/en/login",
+    "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_6801e45f"
+  },
+  {
+    "name": "register___en",
+    "path": "/en/register",
+    "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/register.vue",
+    "chunkName": "pages/register",
+    "_name": "_327fe41d"
+  },
+  {
+    "name": "index___es",
     "path": "/",
     "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/index.vue",
     "chunkName": "pages/index",

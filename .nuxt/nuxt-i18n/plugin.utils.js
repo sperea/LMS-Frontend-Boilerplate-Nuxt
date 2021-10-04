@@ -27,6 +27,33 @@ export async function loadLanguageAsync (context, locale) {
       const { file } = localeObject
       if (file) {
         /*  */
+        /** @type {import('vue-i18n').LocaleMessageObject | undefined} */
+        let messages
+        if (process.client) {
+          const { nuxtState } = context
+          if (nuxtState && nuxtState.__i18n && nuxtState.__i18n.langs[locale]) {
+            messages = nuxtState.__i18n.langs[locale]
+            // Even if already cached in Nuxt state, trigger locale import so that HMR kicks-in on changes to that file.
+            if (context.isDev) {
+              localeMessages[file]()
+            }
+          }
+        }
+        if (!messages) {
+          try {
+            // @ts-ignore
+            const getter = await localeMessages[file]().then(m => m.default || m)
+            messages = typeof getter === 'function' ? await Promise.resolve(getter(context, locale)) : getter
+          } catch (error) {
+            // eslint-disable-next-line no-console
+            console.error(formatMessage(`Failed loading async locale export: ${error.message}`))
+          }
+        }
+        if (messages) {
+          i18n.setLocaleMessage(locale, messages)
+          i18n.loadedLanguages.push(locale)
+        }
+        /*  */
       } else {
         console.warn(formatMessage(`Could not find lang file for locale ${locale}`))
       }

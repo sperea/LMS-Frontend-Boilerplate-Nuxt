@@ -19,5 +19,6 @@ export default {
     },
     loadingIndicator: {
       name: 'pulse'
-    },
+    }
+
   }
