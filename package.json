@@ -8,7 +8,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "test": "jest",
-    "heroku-postbuild": "yarn nuxt build && nuxt start"
+    "heroku-postbuild": "yarn nuxt build"
   },
   "dependencies": {
     "@nuxtjs/auth": "4.9.1",
