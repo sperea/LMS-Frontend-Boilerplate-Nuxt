@@ -14,6 +14,7 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_plugin_c3642380 from 'nuxt_plugin_plugin_c3642380' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_toast_6e63c605 from 'nuxt_plugin_toast_6e63c605' // Source: ./toast.js (mode: 'client')
 import nuxt_plugin_pluginutils_4a53e8b6 from 'nuxt_plugin_pluginutils_4a53e8b6' // Source: ./nuxt-i18n/plugin.utils.js (mode: 'all')
 import nuxt_plugin_pluginrouting_338243b0 from 'nuxt_plugin_pluginrouting_338243b0' // Source: ./nuxt-i18n/plugin.routing.js (mode: 'all')
 import nuxt_plugin_pluginmain_0de4c5bf from 'nuxt_plugin_pluginmain_0de4c5bf' // Source: ./nuxt-i18n/plugin.main.js (mode: 'all')
@@ -214,6 +215,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_plugin_c3642380 === 'function') {
     await nuxt_plugin_plugin_c3642380(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_toast_6e63c605 === 'function') {
+    await nuxt_plugin_toast_6e63c605(app.context, inject)
   }
 
   if (typeof nuxt_plugin_pluginutils_4a53e8b6 === 'function') {

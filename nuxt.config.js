@@ -44,6 +44,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/auth',
     'nuxt-i18n',
+    '@nuxtjs/toast',
   ],
 
   i18n: {
@@ -62,10 +63,6 @@ export default {
     defaultLocale: 'es'
   },
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    baseURL: process.env.BACKEND_URL || 'http://localhost:8000'
-  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -115,6 +112,41 @@ export default {
       },
     },
   },
+
+  router: {
+    middleware: ['auth']
+  },
+
+  axios: {
+    baseURL: process.env.BACKEND_URL || 'http://localhost:8000'
+  },
+
+  toast: {
+    position: 'top-center',
+    iconPack: 'fontawesome',
+    duration: 3000,
+    register: [
+      {
+        name: 'defaultSuccess',
+        message: (payload) =>
+          !payload.msg ? 'Operación realizada con éxito' : payload.msg,
+        options: {
+          type: 'success',
+          icon: 'check'
+        }
+      },
+      {
+        name: 'defaultError',
+        message: (payload) =>
+          !payload.msg ? 'Oops.. Error inesperado' : payload.msg,
+        options: {
+          type: 'error',
+          icon: 'times'
+        }
+      }
+    ]
+  },
+
 
   generate: {
     fallback: true
