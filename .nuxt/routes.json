@@ -14,6 +14,13 @@
     "_name": "_6801e45f"
   },
   {
+    "name": "logout___es",
+    "path": "/logout",
+    "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/logout.vue",
+    "chunkName": "pages/logout",
+    "_name": "_35689ff8"
+  },
+  {
     "name": "register___es",
     "path": "/register",
     "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/register.vue",
@@ -26,6 +33,13 @@
     "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/login.vue",
     "chunkName": "pages/login",
     "_name": "_6801e45f"
+  },
+  {
+    "name": "logout___en",
+    "path": "/en/logout",
+    "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/logout.vue",
+    "chunkName": "pages/logout",
+    "_name": "_35689ff8"
   },
   {
     "name": "register___en",

@@ -6,5 +6,10 @@ export default {
     "forgotPassword": 'he olvidado mi contraseña',
     "emailPlaceholder": "Escribe tu email",
     "passwordPlaceholder": "Escribe tu password",
-    "remember": "Recordar"
+    "remember": "Recordar",
+    "myCourses": "Mis cursos",
+    "allCourses": "Todos los cursos",
+    "help": "Ayuda",
+    "logout": "Cerrar sesión"
+
   }

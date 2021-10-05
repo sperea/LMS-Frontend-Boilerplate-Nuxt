@@ -1,5 +1,4 @@
-<!-- pages/login.vue -->
-<!-- This contains the login form. You should also add some custom validation yourself. -->
+
 <template>
   <div
     class="min-h-screen bg-no-repeat bg-cover bg-center"
@@ -10,7 +9,6 @@
     <div class="flex justify-end">
       <div class="bg-white min-h-screen w-1/2 flex justify-center items-center">
         <div>
-          <form>
             <div>
               <span class="text-sm text-gray-900">{{ $t("welcome") }}</span>
               <h1 class="text-2xl font-bold">{{ $t("loginUser") }}</h1>
@@ -58,7 +56,7 @@
                 <span class="text-sm">{{ $t("remember") }} password</span>
               </div>
               <span
-                class="text-sm text-blue-700 hover:underline cursor-pointer"
+                class="text-sm text-red-700 hover:underline cursor-pointer"
                 >{{ $t("forgotPassword") }}</span
               >
             </div>
@@ -103,7 +101,6 @@
                 <button>{{ $t("loginGoogleButtonText") }}</button>
               </div>
             </div>
-          </form>
         </div>
       </div>
     </div>
@@ -112,11 +109,13 @@
 
 <script>
 export default {
+  layout: 'login',
   data: () => ({
     userData: { email: "", password: "", showPassword: false },
   }),
   methods: {
     async logInUser(userData) {
+	  console.log(userData);		
       try {
         await this.$auth.loginWith("local", {
           data: userData,
