@@ -4,9 +4,11 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _16a25c82 = () => interopDefault(import('../pages/all-courses.vue' /* webpackChunkName: "pages/all-courses" */))
 const _c34b7d70 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 const _6801e45f = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
 const _35689ff8 = () => interopDefault(import('../pages/logout.vue' /* webpackChunkName: "pages/logout" */))
+const _2b67b391 = () => interopDefault(import('../pages/my-courses.vue' /* webpackChunkName: "pages/my-courses" */))
 const _327fe41d = () => interopDefault(import('../pages/register.vue' /* webpackChunkName: "pages/register" */))
 
 const emptyFn = () => {}
@@ -21,6 +23,10 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/all-courses",
+    component: _16a25c82,
+    name: "all-courses___es"
+  }, {
     path: "/en",
     component: _c34b7d70,
     name: "index___en"
@@ -33,9 +39,17 @@ export const routerOptions = {
     component: _35689ff8,
     name: "logout___es"
   }, {
+    path: "/my-courses",
+    component: _2b67b391,
+    name: "my-courses___es"
+  }, {
     path: "/register",
     component: _327fe41d,
     name: "register___es"
+  }, {
+    path: "/en/all-courses",
+    component: _16a25c82,
+    name: "all-courses___en"
   }, {
     path: "/en/login",
     component: _6801e45f,
@@ -44,6 +58,10 @@ export const routerOptions = {
     path: "/en/logout",
     component: _35689ff8,
     name: "logout___en"
+  }, {
+    path: "/en/my-courses",
+    component: _2b67b391,
+    name: "my-courses___en"
   }, {
     path: "/en/register",
     component: _327fe41d,

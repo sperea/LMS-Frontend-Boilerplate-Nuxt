@@ -1,5 +1,12 @@
 [
   {
+    "name": "all-courses___es",
+    "path": "/all-courses",
+    "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/all-courses.vue",
+    "chunkName": "pages/all-courses",
+    "_name": "_16a25c82"
+  },
+  {
     "name": "index___en",
     "path": "/en",
     "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/index.vue",
@@ -21,11 +28,25 @@
     "_name": "_35689ff8"
   },
   {
+    "name": "my-courses___es",
+    "path": "/my-courses",
+    "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/my-courses.vue",
+    "chunkName": "pages/my-courses",
+    "_name": "_2b67b391"
+  },
+  {
     "name": "register___es",
     "path": "/register",
     "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/register.vue",
     "chunkName": "pages/register",
     "_name": "_327fe41d"
+  },
+  {
+    "name": "all-courses___en",
+    "path": "/en/all-courses",
+    "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/all-courses.vue",
+    "chunkName": "pages/all-courses",
+    "_name": "_16a25c82"
   },
   {
     "name": "login___en",
@@ -40,6 +61,13 @@
     "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/logout.vue",
     "chunkName": "pages/logout",
     "_name": "_35689ff8"
+  },
+  {
+    "name": "my-courses___en",
+    "path": "/en/my-courses",
+    "component": "/home/sergio/Proyectos/JLA-Elearning/frontend/pages/my-courses.vue",
+    "chunkName": "pages/my-courses",
+    "_name": "_2b67b391"
   },
   {
     "name": "register___en",

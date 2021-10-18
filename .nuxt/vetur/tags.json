@@ -4,5 +4,8 @@
   },
   "Tutorial": {
     "description": "Auto imported from components/Tutorial.vue"
+  },
+  "CoursesListCourseItem": {
+    "description": "Auto imported from components/CoursesList/CourseItem.vue"
   }
 }
